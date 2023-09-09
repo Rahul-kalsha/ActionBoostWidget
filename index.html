@@ -10,7 +10,9 @@
 
 <body>
     <script>
+        // Your widget initialization script
         function loadActionBoostWidget() {
+            // Every element is dynamic you can change anything logo, icon, text, quick ball count everything.
             let myCustomData = [
                 {
                     type: "appointment",
@@ -21,7 +23,7 @@
                     hoverBackgroundColor: 'linear-gradient(135deg, #ff66b2, #ff3366)', // This property will only be used when myCustomData has only one length
                     buttonTextColor: '#fff',
                     hoverTextColor: '#000', // This property will only be used when myCustomData has only one length
-                    buttonIconUrl: "assets/images/clock-50.png",
+                    buttonIconUrl: "https://cdn.jsdelivr.net/gh/Rahul-kalsha/ActionBoostWidget@main/assets/images/clock-50.png",
                 },
                 {
                     type: "whatsapp",
@@ -30,7 +32,7 @@
                     buttonBackgroundColor: 'linear-gradient(135deg, #ff3366, #ff66b2)',
                     buttonTextColor: '#fff',
                     hoverTextColor: '#000',
-                    buttonIconUrl: "assets/images/whatsapp-64.png",
+                    buttonIconUrl: "https://cdn.jsdelivr.net/gh/Rahul-kalsha/ActionBoostWidget@main/assets/images/whatsapp-64.png",
                 },
                 {
                     type: "email",
@@ -39,7 +41,7 @@
                     buttonBackgroundColor: 'linear-gradient(135deg, #ff3366, #ff66b2)',
                     buttonTextColor: '#fff',
                     hoverTextColor: '#000',
-                    buttonIconUrl: "assets/images/email-64.png",
+                    buttonIconUrl: "https://cdn.jsdelivr.net/gh/Rahul-kalsha/ActionBoostWidget@main/assets/images/email-64.png",
                 },
                 {
                     type: "linkedin",
@@ -48,22 +50,37 @@
                     buttonBackgroundColor: 'linear-gradient(135deg, #ff3366, #ff66b2)',
                     buttonTextColor: '#fff',
                     hoverTextColor: '#000',
-                    buttonIconUrl: "assets/images/linkedin-50.png",
+                    buttonIconUrl: "https://cdn.jsdelivr.net/gh/Rahul-kalsha/ActionBoostWidget@main/assets/images/linkedin-50.png",
                 }
             ];
             let actionWidgetSetting = {
-                imgUrl: 'assets/images/company-logo.png',
-                // location: { right: 10, top: 10 },
-                // location: { right: 10, bottom: 10 },
-                // location: { left: 10, bottom: 10 },
+                imgUrl: 'https://cdn.jsdelivr.net/gh/Rahul-kalsha/ActionBoostWidget@main/assets/images/company-logo.png',
                 location: { right: 10, top: 50 },
+                // location: { right: 10, bottom: 50 },
+                // location: { left: 10, bottom: 50 },
+                // location: { left: 50, top: 50 },
                 toolTipText: 'Click here',
                 attributionText: 'Power By Rahul Kalsha', // This property will only be used when myCustomData has only one length
                 showAttributionText: true // This property will only be used when myCustomData has only one length
             };
             createWidget(myCustomData, actionWidgetSetting);
         }
-        </script>
-        <script src="https://cdn.jsdelivr.net/gh/Rahul-kalsha/ActionBoostWidget/assets/js/action-boost-widget-latest.js" onload="loadActionBoostWidget()"></script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/Rahul-kalsha/ActionBoostWidget/assets/js/action-boost-widget-latest.js" onload="loadActionBoostWidget()"></script>
+    <h3>Key Features:</h3>
+    <ul>
+        <li>Customizable quick action buttons</li>
+        <li>Enhance user engagement</li>
+        <li>Boost conversions</li>
+        <li>Seamless appointment scheduling</li>
+        <li>Effortless chat and messaging</li>
+        <li>Direct email communication</li>
+        <li>Dynamic customization options</li>
+        <li>Flexible widget positioning</li>
+        <li>Perfect for any website</li>
+        <li>Powered by Rahul Kalsha</li>
+    </ul>
+    <p>Make your website more interactive and user-friendly with ActionBoost Widget. Explore the possibilities!</p>
+
 </body>
 </html>
