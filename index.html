@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Action Boost Widget Preview</title>
+    <meta name="description" content="Explore the interactive Action Boost Widget in this preview. Customize your website's engagement with quick actions, appointments, chats, and more. Powered by Rahul Kalsha.">
+</head>
+
+<body>
+    <script>
+        function loadActionBoostWidget() {
+            let myCustomData = [
+                {
+                    type: "appointment",
+                    label: "Request Demo",
+                    url: "https://www.example.com",
+                    openInModal: true,
+                    buttonBackgroundColor: 'linear-gradient(135deg, #ff3366, #ff66b2)',
+                    hoverBackgroundColor: 'linear-gradient(135deg, #ff66b2, #ff3366)', // This property will only be used when myCustomData has only one length
+                    buttonTextColor: '#fff',
+                    hoverTextColor: '#000', // This property will only be used when myCustomData has only one length
+                    buttonIconUrl: "assets/images/clock-50.png",
+                },
+                {
+                    type: "whatsapp",
+                    label: "Let's Chat",
+                    url: "https://wa.me/+919408658556",
+                    buttonBackgroundColor: 'linear-gradient(135deg, #ff3366, #ff66b2)',
+                    buttonTextColor: '#fff',
+                    hoverTextColor: '#000',
+                    buttonIconUrl: "assets/images/whatsapp-64.png",
+                },
+                {
+                    type: "email",
+                    label: "Email",
+                    url: "mailto:kalsarahul@gmail.com",
+                    buttonBackgroundColor: 'linear-gradient(135deg, #ff3366, #ff66b2)',
+                    buttonTextColor: '#fff',
+                    hoverTextColor: '#000',
+                    buttonIconUrl: "assets/images/email-64.png",
+                },
+                {
+                    type: "linkedin",
+                    label: "linkedin",
+                    url: "https://www.linkedin.com/in/rahul-kalsha/",
+                    buttonBackgroundColor: 'linear-gradient(135deg, #ff3366, #ff66b2)',
+                    buttonTextColor: '#fff',
+                    hoverTextColor: '#000',
+                    buttonIconUrl: "assets/images/linkedin-50.png",
+                }
+            ];
+            let actionWidgetSetting = {
+                imgUrl: 'assets/images/company-logo.png',
+                // location: { right: 10, top: 10 },
+                // location: { right: 10, bottom: 10 },
+                // location: { left: 10, bottom: 10 },
+                location: { right: 10, top: 50 },
+                toolTipText: 'Click here',
+                attributionText: 'Power By Rahul Kalsha', // This property will only be used when myCustomData has only one length
+                showAttributionText: true // This property will only be used when myCustomData has only one length
+            };
+            createWidget(myCustomData, actionWidgetSetting);
+        }
+        </script>
+        <script src="https://cdn.jsdelivr.net/gh/Rahul-kalsha/ActionBoostWidget/assets/js/action-boost-widget.js" onload="loadActionBoostWidget()"></script>
+</body>
+</html>
