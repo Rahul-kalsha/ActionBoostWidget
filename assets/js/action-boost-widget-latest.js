@@ -84,7 +84,7 @@ function createQuickBallMenu(item, actionWidgetSetting, menu, customDataLength, 
                 align-items : center;
                 display : flex;
                 position : fixed;
-                z-index: 1;
+                z-index: 999999;
                 overflow: hidden;
                 padding : 10px 10px;
                 border-radius : 5px;
@@ -126,7 +126,7 @@ function createQuickBallMenu(item, actionWidgetSetting, menu, customDataLength, 
         internalstyle = `.abw-quick-ball-menu-item-${index} {
             background: ${item?.buttonBackgroundColor ? item.buttonBackgroundColor : 'transparent'};
             color: ${item?.buttonTextColor ? item.buttonTextColor : 'black'};
-        }.abw-quick-ball-menu-item-${index}:hover {color: ${item?.buttonTextColor ? item.buttonTextColor : 'transparent'};`;
+        }.abw-quick-ball-menu-item-${index}:hover {color: ${item?.buttonTextColor ? item.buttonTextColor + ' !important' : 'transparent'};`;
     }
     appendStylesToHead(internalstyle);
     menuItem.addEventListener('click', function () {
@@ -190,7 +190,7 @@ function createQuickBall(myCustomData, actionWidgetSetting) {
             border-radius: 5px;
             width: auto;
             min-width: 100%;
-            max-width: 125px;
+            max-width: 200px;
             z-index: 11;
         }
         .abw-quick-ball-item:hover .abw-label-text-section {
@@ -207,6 +207,7 @@ function createQuickBall(myCustomData, actionWidgetSetting) {
             cursor: pointer;
             display: flex;
             align-items: center;
+            z-index: 999999;
         }
         #abw-quick-ball #quick-ball-button::after{
             content: "X";
